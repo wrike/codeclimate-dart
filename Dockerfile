@@ -2,7 +2,7 @@ FROM google/dart AS dart-runtime
 
 WORKDIR /app
 
-RUN git clone https://github.com/wrike/metrics.git /app
+RUN git clone --depth 1 --branch 2.1.0 https://github.com/wrike/dart-code-metrics.git /app
 RUN pub get
 RUN dart2native /app/bin/metrics.dart -o /app/metrics
 
