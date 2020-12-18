@@ -4,7 +4,8 @@ FROM google/dart AS dart-runtime
 
 WORKDIR /app
 
-RUN git clone --depth 1 --branch 2.1.0 https://github.com/wrike/dart-code-metrics.git /app
+# TODO: RUN git clone --depth 1 --branch <version released with https://github.com/wrike/dart-code-metrics/pull/177> https://github.com/wrike/dart-code-metrics.git /app
+RUN git clone --depth 1 --branch master https://github.com/wrike/dart-code-metrics.git /app
 RUN pub get
 RUN dart2native /app/bin/metrics.dart -o /app/metrics
 
