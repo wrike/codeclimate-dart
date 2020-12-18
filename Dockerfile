@@ -11,7 +11,6 @@ RUN dart2native /app/bin/metrics.dart -o /app/metrics
 # Install engine:
 
 FROM bitnami/minideb
-LABEL maintainer="Zennon Gosalvez <1798166+zgosalvez@users.noreply.github.com>"
 
 WORKDIR /usr/src/app/
 

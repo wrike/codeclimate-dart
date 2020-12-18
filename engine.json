@@ -2,8 +2,8 @@
   "name": "dart",
   "description": "Code Climate Dart-Engine",
   "maintainer": {
-    "name": "Zennon Gosalvez",
-    "email": "1798166+zgosalvez@users.noreply.github.com"
+    "name": "Sinegovsky Ivan",
+    "email": "ivan.sinegovsky@team.wrike.com"
   },
   "languages" : ["Dart"],
   "version": "(generated)",
