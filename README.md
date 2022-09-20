@@ -8,6 +8,12 @@
 2. Run `codeclimate engines:install dart`. This command both installs the engine and enables it in your `.codeclimate.yml` file.
 3. You're ready to analyze! Browse into your project's folder and run `codeclimate analyze`.
 
+### Test Plugin locally
+
+1. Create docker image `docker build -t codeclimate/codeclimate-dart:latest .`
+2. Test Code Climeta with your project `codeclimate analyze --dev`
+You also can generate local html test report `codeclimate analyze --dev -f html > codeclimate.html`
+
 ### Need help?
 
 For help with `metrics`, [check out their documentation](https://github.com/wrike/dart-code-metrics).
